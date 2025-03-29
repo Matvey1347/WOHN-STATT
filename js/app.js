@@ -15,3 +15,13 @@ new Swiper(".portfolio__swiper", {
     prevEl: ".portfolio__swiper_prev",
   },
 });
+
+new Swiper(".testimonials__swiper", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".testimonials__arrow-next",
+    prevEl: ".testimonials__arrow-prev",
+  },
+});
+
