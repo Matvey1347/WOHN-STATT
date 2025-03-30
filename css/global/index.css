@@ -139,6 +139,10 @@
   color: var(--silver-d);
 }
 
+.text--black {
+  color: var(--black);
+}
+
 .text__line {
   color: var(--black);
   font-size: 16px;
@@ -193,6 +197,10 @@
 
 .text--blue {
   color: var(--main-color);
+}
+
+.text--uppercase {
+  text-transform: uppercase;
 }
 
 @media (max-width: 1400px) {
@@ -256,9 +264,15 @@
   text-transform: uppercase;
 }
 
+.networks a {
+  transition: all 0.4s ease 0s;
+}
+
+.networks a:hover {
+  transform: scale(1.1);
+}
+
 /* Media */
-
-
 .show-1200 {
   display: none !important;
 }
@@ -272,7 +286,6 @@
     display: none !important;
   }
 }
-
 
 .show-1000 {
   display: none !important;
