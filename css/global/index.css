@@ -18,10 +18,14 @@
 
   --header-bg: var(--silver20);
 
-  --burger-bg: rgba(0, 0, 0, 0.9);
+  --burger-bg: rgba(11, 28, 86, 1);
 
   --footer-bottom-text-color: rgba(253, 254, 255, 0.85);
   --footer-top-text-color: #fdfdff;
+}
+
+.bg--blue {
+  background-color: var(--main-color);
 }
 
 .top-padding {
@@ -48,6 +52,7 @@
   line-height: 1.1;
   letter-spacing: 1.08px;
   text-transform: uppercase;
+  white-space: nowrap;
   transition: all 0.4s ease 0s;
 }
 

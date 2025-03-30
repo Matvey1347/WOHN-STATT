@@ -13,7 +13,7 @@
 }
 
 .common__img {
-  width: 50%;
+  width: calc(50% - 30px);
 }
 
 .common__content {
@@ -43,7 +43,100 @@
   margin-left: 20px;
 }
 
+.common__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.common__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.common__item--first {
+  align-items: start;
+}
+
+.common__item--second {
+  align-items: end;
+  margin-top: -150px;
+}
+
+/* reverse */
+.common__item._reverse {
+  flex-direction: row-reverse;
+}
+
+.common__item._reverse .text__line {
+  justify-content: start;
+}
+
+.common__item._reverse .common__text-first {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.common__item._reverse .common__title_wrap {
+  justify-content: start;
+  position: relative;
+  z-index: 2;
+}
+
+.common--about .common__img {
+  width: calc(60% - 10px);
+}
+
+.common--about .common__content {
+  width: calc(40% - 10px);
+}
+
+.common--about .common__title {
+  padding: 47px 80px;
+  text-align: center;
+}
+
+.about-common__content {
+  margin-top: 30px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--silver-d);
+}
+
+.about-common__title {
+  color: var(--black);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.about-common__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: #7f7f80;
+  font-size: 20px;
+  line-height: 1.4;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-transform: lowercase;
+}
+
+.about-common__link img {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  object-fit: contain;
+}
+
 @media (max-width: 1400px) {
+  .common--about .common__title {
+    padding: 20px 30px;
+  }
+
   .common__title {
     min-width: 0;
   }
@@ -55,11 +148,21 @@
   .common__content {
     width: calc(60% - 30px);
   }
+
+  .common__item--second {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 1000px) {
+  .common__item._reverse,
+  .common__item,
   .common__container {
     flex-direction: column-reverse;
+  }
+
+  .about-common__content {
+    margin-left: 0;
   }
 
   .common__img {
@@ -67,14 +170,25 @@
     margin-top: 20px;
   }
 
+  .common--about .common__img,
+  .common--about .common__content,
   .common__content {
     width: 100%;
   }
 }
 
 @media (max-width: 550px) {
+  .about-common__title {
+    font-size: 30px;
+  }
+
+  .about-common__link {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
   .common__title {
-    margin: 7px 0 10px 0;
+    margin: 7px auto 10px;
     text-align: center;
   }
 
