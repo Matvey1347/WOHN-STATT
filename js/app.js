@@ -1,6 +1,7 @@
 import MainClass from "./classes/main-classes.js";
 import { initHeader } from "./header/index.js";
 import "./animation.js";
+import "./components/spollers.js";
 
 const app = new MainClass();
 

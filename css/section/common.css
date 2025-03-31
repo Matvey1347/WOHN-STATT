@@ -132,6 +132,11 @@
   object-fit: contain;
 }
 
+.common--contact .common__title {
+  padding: 13px 36px;
+  text-align: start;
+}
+
 @media (max-width: 1400px) {
   .common--about .common__title {
     padding: 20px 30px;
@@ -155,6 +160,9 @@
 }
 
 @media (max-width: 1000px) {
+  .common__text-first {
+    margin-left: 0;
+  }
   .common__item._reverse,
   .common__item,
   .common__container {
@@ -189,7 +197,7 @@
 
   .common__title {
     margin: 7px auto 10px;
-    text-align: center;
+    text-align: center !important;
   }
 
   .common .btns__wrap {
