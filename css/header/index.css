@@ -13,11 +13,13 @@
   background-color: var(--header-bg);
 }
 
+.header._fixed,
 .header._fixed_active {
   background-color: var(--main-color);
   border-bottom: 1px solid #fff;
 }
 
+.header._fixed .btn,
 .header._fixed_active .btn {
   background-color: var(--white);
   color: var(--black);

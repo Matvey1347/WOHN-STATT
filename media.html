@@ -55,38 +55,154 @@
           <section class="media-top bg--blue">
             <div class="top-padding"></div>
             <div class="_container">
-              <h1 class="title title--small text--uppercase text--white text--center text--600">
+              <h1
+                class="title title--small text--uppercase text--white text--center text--600"
+              >
                 Mediathek
               </h1>
             </div>
           </section>
           <section class="media-videos">
             <div class="_container">
-              <h2 class="title title--small text--uppercase text--40 text--blue text--700">
+              <h2
+                class="title title--small text--uppercase text--40 text--blue text--700"
+              >
                 videothek
               </h2>
-              <div class="swiper media-videos__swiper">
-                <button class="testimonials__arrow-prev"></button>
-                <button class="testimonials__arrow-next"></button>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item.png" alt="media-videos__item" />
+              <div class="media-videos__swiper_wrap">
+                <button class="media-videos__arrow-prev">
+                  <img
+                    src="./image/icons/media-videos-arrow-left.svg"
+                    alt="arrow-left"
+                  />
+                </button>
+                <button class="media-videos__arrow-next">
+                  <img
+                    src="./image/icons/media-videos-arrow-right.svg"
+                    alt="arrow-right"
+                  />
+                </button>
+                <div class="swiper media-videos__swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item-1.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item-2.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item-1.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="./image/media-videos__item-2.png"
+                        alt="media-videos__item"
+                      />
+                    </div>
                   </div>
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item-1.png" alt="media-videos__item" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item-2.png" alt="media-videos__item" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item.png" alt="media-videos__item" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item-1.png" alt="media-videos__item" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="./image/media-videos__item-2.png" alt="media-videos__item" />
-                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="media-images">
+            <div class="_container">
+              <h2
+                class="title title--small text--uppercase text--40 text--blue text--700"
+              >
+                Wohnwerkstatt Fotogalerie
+              </h2>
+              <div class="media-images__items">
+                <div class="media-images__item__col">
+                  <img
+                    src="./image/media-images__item-1.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-3.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-6.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-9.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-12.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                </div>
+                <div class="media-images__item__col">
+                  <img
+                    src="./image/media-images__item-13.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-4.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-7.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-10.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                </div>
+                <div class="media-images__item__col">
+                  <img
+                    src="./image/media-images__item-2.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-5.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-8.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
+                  <img
+                    src="./image/media-images__item-11.png"
+                    alt="media-images__item"
+                    class="media-images__item"
+                  />
                 </div>
               </div>
             </div>
@@ -206,5 +322,11 @@
     src="https://cdn.jsdelivr.net/npm/swiper@8.0.7/swiper-bundle.min.js"
     defer
   ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
+
   <script src="./js/app.js" type="module" defer></script>
 </html>

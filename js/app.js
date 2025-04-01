@@ -28,9 +28,31 @@ new Swiper(".testimonials__swiper", {
 
 new Swiper(".media-videos__swiper", {
   spaceBetween: 20,
-  slidesPerView: "auto",
+  slidesPerView: 3,
   navigation: {
-    nextEl: ".testimonials__arrow-next",
-    prevEl: ".testimonials__arrow-prev",
+    nextEl: ".media-videos__arrow-next",
+    prevEl: ".media-videos__arrow-prev",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    700: {
+      slidesPerView: 2,
+    },
+    1000: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mediaWrap = document.querySelector(".media-images__items");
+  if (!mediaWrap) return;
+  const mediaItems = mediaWrap.querySelectorAll(".media-images__item");
+  mediaItems.forEach((item) => {
+    item.setAttribute("data-fancybox", "gallery");
+  });
+
+  Fancybox.bind(mediaWrap);
 });

@@ -301,6 +301,10 @@
   font-size: 24px;
 }
 
+.text--20 {
+  font-size: 20px;
+}
+
 .text--blue {
   color: var(--main-color);
 }
@@ -384,6 +388,10 @@ a.text--underline:hover {
 
   .text--28 {
     font-size: 20px;
+  }
+
+  .text--20 {
+    font-size: 16px;
   }
 
   .text--24 {
