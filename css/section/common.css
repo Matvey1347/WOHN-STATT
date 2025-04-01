@@ -22,6 +22,18 @@
   width: calc(50% - 60px);
 }
 
+.common__content ul {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.common__content ul li {
+  list-style: disc;
+}
+
+
+
 .common__title {
   background: var(--main-color);
   padding: 10px 20px;
@@ -61,6 +73,10 @@
 .common__item--second {
   align-items: end;
   margin-top: -150px;
+}
+
+._center {
+  align-items: center;
 }
 
 /* reverse */
