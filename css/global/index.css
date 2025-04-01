@@ -309,6 +309,10 @@
   text-transform: uppercase;
 }
 
+.text--center {
+  text-align: center;
+}
+
 ol {
   display: flex;
   flex-direction: column;

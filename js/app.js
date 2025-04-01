@@ -26,3 +26,11 @@ new Swiper(".testimonials__swiper", {
   },
 });
 
+new Swiper(".media-videos__swiper", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  navigation: {
+    nextEl: ".testimonials__arrow-next",
+    prevEl: ".testimonials__arrow-prev",
+  },
+});
