@@ -1,0 +1,146 @@
+@import url("./burger.css");
+@import url("./hover-underline.css");
+
+/* IF FIXED HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.4s ease 0s;
+  position: fixed;
+  background-color: var(--header-bg);
+}
+
+/* .header._fixed, */
+.header._fixed_active {
+  background-color: var(--main-color);
+  border-bottom: 1px solid #fff;
+}
+
+/* .header._fixed .btn, */
+.header._fixed_active .btn {
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.header._fixed_active .btn:hover {
+  background-color: var(--main-color);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .header._fixed .btn,
+  .header._fixed_active .btn {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
+  }
+
+  .header._fixed .btn:hover,
+  .header._fixed_active .btn:hover {
+    background-color: var(--main-color);
+    border: 1px solid var(--white);
+    color: var(--white);
+  }
+}
+
+/*-----------------*/
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 5;
+  padding: 15px 0;
+}
+
+/*-------- HEADER TEXT STYLE --------*/
+
+/* MENU LIST */
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list > li {
+  position: relative;
+  margin-left: 33px;
+  padding: 10px 0;
+}
+
+.menu__link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 1.08px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+._active .menu__link {
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .menu__link {
+    color: #fff;
+  }
+}
+
+body._touch .menu__list > li {
+  display: flex;
+  align-items: center;
+}
+
+body._touch .menu__link {
+  flex: 1 1 auto;
+}
+
+.menu__list .btn {
+  margin-left: 30px;
+}
+
+@media (max-width: 1400px) {
+  .menu__list .btn {
+    margin-left: 0;
+  }
+}
+
+/* MENU LIST WITH BURGER */
+@media (max-width: 1200px) {
+  .header__logo img {
+    width: 50px;
+  }
+
+  .menu__list .btn {
+    margin-left: 0;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .menu__list > li {
+    margin-bottom: 30px;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .menu__list > li > li:last-child {
+    margin: 0;
+  }
+
+  .menu__link {
+    font-size: 24px;
+  }
+}
